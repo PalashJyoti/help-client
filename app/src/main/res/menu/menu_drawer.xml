@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="User">
+        <menu>
+            <item
+                android:title="Profile"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:id="@+id/d_profile"/>
+
+
+        </menu>
+    </item>
+    <item
+        android:title="App">
+        <menu>
+            <item
+                android:title="About"
+                android:id="@+id/about"/>
+            <item
+                android:title="Terms and conditions"
+                android:id="@+id/tnc"/>
+            <item
+                android:title="Privacy Policy"
+                android:id="@+id/policy"/>
+            <item
+                android:title="Refund policy"
+                android:id="@+id/refund"/>
+            <item
+                android:title="Share"
+                android:id="@+id/share"/>
+        </menu>
+    </item>
+</menu>

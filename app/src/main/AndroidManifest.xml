@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helopc.shopheaven.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Helopc"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.helopc.app.CustomPcActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.AllCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HelopcNo" />
+        <activity
+            android:name="com.helopc.app.Story"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.Payment_Successful"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.Payment"
+            android:exported="true" />
+        <activity
+            android:name="com.helopc.app.Product_List_All"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Product_List_Under_Category"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.Product"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.ContactUs"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Refund_Policy"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Privacy_Policy"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Orders"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Cart"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.My_Account"
+            android:exported="false"
+            android:theme="@style/Theme.Helopc" />
+        <activity
+            android:name="com.helopc.app.EditAcountDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Ordered_Item"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Add_details"
+            android:exported="false" />
+        <activity
+            android:name="com.helopc.app.Activity_Login"
+            android:exported="true"
+            android:theme="@style/Theme.HelopcNo" />
+        <activity
+            android:name="com.helopc.app.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.HelopcNo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_O0RyWwwEwWDStk" />
+    </application>
+
+</manifest>

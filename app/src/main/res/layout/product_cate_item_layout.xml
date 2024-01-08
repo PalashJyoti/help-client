@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_marginTop="1dp"
+    android:padding="3dp"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:paddingStart="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/preview_1" />
+<LinearLayout
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/image"
+    android:padding="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:maxWidth="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:fontFamily="@font/metro_m"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Name"/>
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metro_m"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Price"
+            android:textColor="#656565"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/xnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/metro_m"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="x5"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_centerVertical="true"
+    android:layout_marginTop="18dp"
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@color/selected"
+        android:fontFamily="@font/metro_m"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:padding="7dp"
+        android:text="Delete"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

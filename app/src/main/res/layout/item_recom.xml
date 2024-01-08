@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="20dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_below="@id/image"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:fontFamily="@font/metro_m"
+        android:paddingTop="10dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="15sp" />
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@id/name"
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:fontFamily="@font/metro_m"
+        android:paddingTop="5dp"
+        android:text="Category"
+        android:textColor="#5E5E5E"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_below="@id/category"
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:fontFamily="@font/metro_m"
+        android:paddingTop="5dp"
+        android:text="Price"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="25dp"
+    tools:context="com.helopc.app.Payment"
+    tools:ignore="MissingDefaultResource">
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/thing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Amount"
+        android:textColor="#000"
+        android:fontFamily="@font/metro_m"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart Total"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 100"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charges"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/decharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ ₹20"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST and Other Charges"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 20%"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/coupontext"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Applied"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/amountdeduct"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 50%"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/payable"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 130"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Online"
+        android:textAllCaps="true"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:background="@color/teal_700"
+        android:fontFamily="@font/metro_m"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/payond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay on Delivery"
+        android:textAllCaps="true"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:background="@color/teal_700"
+        android:fontFamily="@font/metro_m"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay With Wallet Balance"
+        android:textAllCaps="true"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:background="@color/reddish"
+        android:fontFamily="@font/metro_m"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</LinearLayout>

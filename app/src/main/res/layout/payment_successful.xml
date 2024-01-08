@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.helopc.app.Payment_Successful"
+    tools:ignore="MissingDefaultResource">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="order_placed.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/metro_m"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Order Placed!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metro_m"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:text="Your order has been placed successfully.\nFor more details, go to My Orders."
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+<RelativeLayout
+    android:layout_marginTop="50dp"
+    android:id="@+id/rel"
+    android:gravity="center"
+    android:layout_below="@id/text2"
+    android:layout_centerHorizontal="true"
+    android:layout_width="300dp"
+    android:background="@drawable/white_bg"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginEnd="11dp"
+        android:gravity="center"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/red_bg"
+        android:padding="5dp"
+        app:cardCornerRadius="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/metro_m"
+        android:gravity="center"
+        android:text="My Orders"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cardCornerRadius="10dp" />
+
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/metro_m"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:text="Back To Home"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>

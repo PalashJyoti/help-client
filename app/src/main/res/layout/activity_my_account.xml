@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helopc.app.My_Account">
+
+
+    <RelativeLayout
+        android:layout_above="@id/bottom_navig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="15dp"
+                    android:background="@color/teal_700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/myaccinapp"/>
+                    <TextView
+                        android:id="@+id/personname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="25dp"
+                        android:text="Name : Loading..."
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/metro_m"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metro_m"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/metro_m"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/personemail"
+                    android:text="Email : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/personphone"
+                    android:text="Phone : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/city"
+                    android:text="City : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/pincode"
+                    android:text="Pin Code : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/area"
+                    android:text="Area : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/road"
+                    android:text="Road : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/apartment"
+                    android:text="Apartment : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/houseno"
+                    android:text="House no. : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/landmark"
+                    android:text="Landmark : Loading..."
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:paddingStart="17dp"
+                    android:fontFamily="@font/metro_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:background="@color/teal_700"
+                    android:text="Edit"
+                    android:fontFamily="@font/metro_m"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/metro_m"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="Logout"
+            android:background="@color/teal_700"
+            android:textAllCaps="true"
+            android:textColor="#fff" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/drawer_category"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="All Categories"
+        android:iconTint="@color/teal_700"/>
+    <item android:id="@+id/drawer_prebuilt"
+        android:icon="@drawable/ic_baseline_prebuilt"
+        android:title="Prebuilt PC"
+        android:iconTint="@color/teal_700"/>
+    <item android:id="@+id/drawer_customBuild"
+        android:icon="@drawable/ic_baseline_custom_build"
+        android:title="Custom PC Build"
+        android:iconTint="@color/teal_700"/>
+    <item android:id="@+id/drawer_order"
+        android:icon="@drawable/ic_baseline_shopping_bag_24"
+        android:iconTint="@color/teal_700"
+        android:title="My Orders"
+        />
+    <item android:id="@+id/drawer_cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:iconTint="@color/teal_700"
+        android:title="My Cart"/>
+    <item android:id="@+id/drawer_wishlist"
+        android:icon="@drawable/ic_baseline_wishlist"
+        android:iconTint="@color/teal_700"
+        android:title="My Wishlist"/>
+    <item android:id="@+id/drawer_account"
+        android:iconTint="@color/teal_700"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="My Account"/>
+    <item android:id="@+id/drawer_contact"
+        android:iconTint="@color/teal_700"
+        android:icon="@drawable/ic_baseline_phone_24"
+        android:title="Contact Us"/>
+    <item android:id="@+id/drawer_logout"
+        android:iconTint="@color/teal_700"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_logout"/>
+</menu>

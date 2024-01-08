@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/coupon_bg"
+    android:orientation="horizontal"
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/coupon"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/amount"
+            android:layout_toEndOf="@id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="50% OFF"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:fontFamily="@font/metro_m"
+            android:textColor="#4A4A4A"/>
+        <TextView
+            android:id="@+id/promocode"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="9dp"
+            android:layout_below="@id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Use Promo Code PROMOCODE123"
+            android:textSize="10sp"
+            android:fontFamily="@font/metro_m"
+            android:layout_centerVertical="true"
+            android:textColor="#636363"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPLY"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/teal_700"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/metro_m"
+        android:layout_alignParentEnd="true"/>
+</LinearLayout>
